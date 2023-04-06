@@ -1,0 +1,1 @@
+This is the file create with the writeFileSync method of fs module

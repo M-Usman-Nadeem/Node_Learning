@@ -1,0 +1,31 @@
+Modules:
+It is a piece of code that has its own context 
+In Node.js,each file is considered as a module
+
+There are three types of modules.
+1:Local Modules-We create in our application.
+2:BuiltIn Modules
+3:Third Party Modules.
+
+---To add Modules in our code 
+ or to load a module into another file we use:
+ require() function
+
+ when we import a module(file),
+node.js wraps it inside a function that 
+gives us a different scope of every module and
+protects us from conflicts like having same name of variables or functions.
+
+Module Wrapper:
+Each Module Wrap into a IIFE before being loaded.
+IIFE gives the variable scope to the module instead of the global object.
+
+
+Each function wrapper has 5 parameter like this
+(function(exports,require,module,__filename__dirname){ 
+// module code comes here})
+Require==> it is the function through which we export the module by passing a path as an argument.
+__dirname==it is the directory name where is the file is 
+__filename==> it is the complete src of file name
+module==>it is the object which is the object has different type of key-value pairs.
+exports==>               
